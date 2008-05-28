@@ -298,14 +298,14 @@ writeVariableCodeRepresentation<-function(nGroupsOfValueLabels,valuelabels,i,stu
       }
       if (nMissings > 0) {
         cat("<l:CodeRepresentation missingValue=\"")
-        for (i in missingValues) cat(paste(i," ",sep=""))
+        for (k in missingValues) cat(paste(k," ",sep=""))
         cat("\">\n")
       }
       if (nMissings == -2) {
         cat("<l:CodeRepresentation")
         if (abs(missingValues[2]-missingValues[1]) < maxNumberMissings) {
           cat(" missingValue=\"")
-          for (i in missingValues[1]:missingValues[2]) cat(paste(i," ",sep=""))
+          for (k in missingValues[1]:missingValues[2]) cat(paste(k," ",sep=""))
           cat("\">\n")
         } else {
           cat(">\n")      
@@ -315,7 +315,7 @@ writeVariableCodeRepresentation<-function(nGroupsOfValueLabels,valuelabels,i,stu
         cat("<l:CodeRepresentation")
         if (abs(missingValues[2]-missingValues[1]) < maxNumberMissings) {
           cat(" missingValue=\"")
-          for (i in missingValues[1]:missingValues[2]) cat(paste(i," ",sep=""))
+          for (k in missingValues[1]:missingValues[2]) cat(paste(k," ",sep=""))
           cat(missingValues[3])
           cat("\">\n")
         } else {

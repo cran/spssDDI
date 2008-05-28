@@ -12,13 +12,6 @@ There are two functions included in this package:
 \code{writeDDI} produces a valid DDI Version 3.0 XML document from \code{readSpssSav} output.
 }
 \details{
-\tabular{ll}{
-Package: \tab spssDDI\cr
-Type: \tab Package\cr
-Version: \tab 0.1\cr
-Date: \tab 2008 - 6-15\cr
-License: \tab GNU General Public Licence\cr
-}
 
 The SPSS System file format is described in \file{pspp-dev.pdf}  (\url{http://www.gnu.org/software/pspp/}). 
 \code{PSSP} is a program for statistical analysis of sampled data. 

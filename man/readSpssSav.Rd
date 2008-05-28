@@ -100,17 +100,17 @@ Invoking \code{str(readSpssSav("benchmarkSpss16.sav",readdata=T)} generates the 
 List of 4
  $ Header   :List of 11
   ..$ RecordType  : chr "$FL2"
-  ..$ ProductName : chr "@(#) SPSS DATA FILE MS Windows 16.0.1                       "
+  ..$ ProductName : chr "@(#) SPSS DATA FILE MS Windows 16.0.2                       "
   ..$ LayoutCode  : int 2
-  ..$ CaseSize    : int 19
+  ..$ CaseSize    : int 20
   ..$ Compress    : int 1
   ..$ WeightIndex : num 0
   ..$ NumCases    : int 3
   ..$ Bias        : num 100
-  ..$ CreationDate: chr "27 May 08"
-  ..$ CreationTime: chr "16:00:00"
+  ..$ CreationDate: chr "23 Jun 08"
+  ..$ CreationTime: chr "16:21:00"
   ..$ FileLabel   : chr "Test file                                                       "
- $ Variables:List of 19
+ $ Variables:List of 20
   ..$ V1 :List of 7
   .. ..$ Number missings: int 0
   .. ..$ Print fmt      : int [1:4] 0 8 5 0
@@ -263,6 +263,14 @@ List of 4
   .. ..$ Varlabel       : chr "String, variable attribute"
   .. ..$ Missing values : NULL
   .. ..$ Typecode       : int 8
+  ..$ V22:List of 7
+  .. ..$ Number missings: int 1
+  .. ..$ Print fmt      : int [1:4] 0 14 1 0
+  .. ..$ Write fmt      : int [1:4] 0 8 1 0
+  .. ..$ Varname        : chr "V22     "
+  .. ..$ Varlabel       : chr "Long string, discrete user missings,copia"
+  .. ..$ Missing values : chr "bbbbbb  "
+  .. ..$ Typecode       : int 14
  $ Mixed    :List of 12
   ..$ Value labels                                      :List of 3
   .. ..$ :List of 3
@@ -277,8 +285,8 @@ List of 4
   .. .. ..$ Value, label : chr [1:2] "aaaaaaaa" "a8"
   .. .. ..$ var number(s): int 13
   ..$ Sysmis, highest, lowest                           : num [1:3] -1.80e+308  1.80e+308 -1.80e+308
-  ..$ Major,minor,revision,floating,endianness,character: int [1:6] 16 0 1 1 2 1252
-  ..$ Short and long varnames                           :List of 19
+  ..$ Major,minor,revision,floating,endianness,character: int [1:6] 16 0 2 1 2 1252
+  ..$ Short and long varnames                           :List of 20
   .. ..$ Short, long: chr [1:2] "V1" "V1"
   .. ..$ Short, long: chr [1:2] "V2" "V2"
   .. ..$ Short, long: chr [1:2] "V3" "V3"
@@ -298,6 +306,7 @@ List of 4
   .. ..$ Short, long: chr [1:2] "V19" "V19"
   .. ..$ Short, long: chr [1:2] "V20" "V20"
   .. ..$ Short, long: chr [1:2] "V21" "V21"
+  .. ..$ Short, long: chr [1:2] "V22" "V22"
   ..$ Variable sets                                     :List of 2
   .. ..$ Set, varnames: chr [1:2] "test" " v1 v2 v3"
   .. ..$ Set, varnames: chr [1:2] "another" " v6 v1 v9"
@@ -307,19 +316,27 @@ List of 4
   .. ..$ Varname, length: chr [1:2] "V20" "260"
   ..$ Document                                          : chr "Test file.                                                                      New SPSS 16.0 features.                        "| __truncated__
   ..$ Trend                                             : NULL
-  ..$ Display                                           : int [1:66] 3 3 1 3 4 1 3 3 1 3 ...
-  ..$ Strings' value labels                             :List of 2
+  ..$ Display                                           : int [1:69] 3 3 1 3 4 1 3 3 1 3 ...
+  ..$ Strings' value labels                             :List of 4
   .. ..$ :List of 3
   .. .. ..$ : chr "V16"
-  .. .. ..$ : chr "bbbbbbbbbbbbbb"
-  .. .. ..$ : chr "b14"
+  .. .. ..$ : chr [1:2] "bbbbbbbbbbbbbb" "cccccccccccccc"
+  .. .. ..$ : chr [1:2] "b14" "c14"
   .. ..$ :List of 3
   .. .. ..$ : chr "V17"
   .. .. ..$ : chr "ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"| __truncated__
   .. .. ..$ : chr "c260"
+  .. ..$ :List of 3
+  .. .. ..$ : chr "V19"
+  .. .. ..$ : chr "bbbbbb        "
+  .. .. ..$ : chr "valore mancante"
+  .. ..$ :List of 3
+  .. .. ..$ : chr "V22"
+  .. .. ..$ : chr "bbbbbb        "
+  .. .. ..$ : chr "valore mancante"
   ..$ Encoding                                          : chr "windows-1252"
   ..$ Other                                             : chr ""
- $ Data     : chr [1:57] "1" "1.2" "1" "1.2" ...
+ $ Data     : chr [1:60] "1" "1.2" "1" "1.2" ...
 }
 
 \code{readSpssSav} ignores unknown miscellaneous informational records when reading SPSS system files.

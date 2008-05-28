@@ -1,0 +1,16 @@
+de0fe08c043a5dc30413d9d249e3f405 *DESCRIPTION
+9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+b7d51dfa91fe0d99cddafd4fed851fe5 *R/readSpssSav.R
+c8fb29e10a7c519e4e26d0c99df53dec *R/writeDDI.R
+28aafb74e138266b1d433dd404c13a7e *inst/doc/benchmark.xml
+2937bcf8685302075a1dd4855d820f53 *inst/doc/benchmarkSpss16.pdf
+e547f55f2370575b8365d883173cc93c *inst/doc/benchmarkSpss16.sav
+9d007833b0de5a663713db7d42024947 *inst/doc/benchmarkSpss16pspp.pdf
+6b86620ea29707de1cb4cfb5ed4f293d *inst/doc/benchmarkSpss16readSpssSav.pdf
+77d8b5ac40b9a322722aa90a20b2f3c5 *inst/doc/essSample.sav
+3ab9c7b2b65b56e0a332d17f63b0c3a2 *inst/doc/essSample.xml
+3eece477cd33e327facf0fc9979677b0 *inst/doc/index.html
+5c8b46ea3a857992b130ab04b089826d *inst/doc/index_files/R.css
+83c17ea4b3e9b6de6fe3bac92b888776 *man/readSpssSav.Rd
+9bca03205c6bb24dba68d31db6b6e7a1 *man/spssDDI-package.Rd
+ee6dfec2d01114c48dae4ca87f507319 *man/writeDDI.Rd

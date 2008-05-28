@@ -42,8 +42,17 @@
 <l:Category  id="ID_Category_Long_1_1">
 <r:Label>b14</r:Label>
 </l:Category>
+<l:Category  id="ID_Category_Long_1_2">
+<r:Label>c14</r:Label>
+</l:Category>
 <l:Category  id="ID_Category_Long_2_1">
 <r:Label>c260</r:Label>
+</l:Category>
+<l:Category  id="ID_Category_Long_3_1">
+<r:Label>valore mancante</r:Label>
+</l:Category>
+<l:Category  id="ID_Category_Long_4_1">
+<r:Label>valore mancante</r:Label>
 </l:Category>
 </l:CategoryScheme>
 <l:CodeScheme id="ID_CodeScheme_1_8">
@@ -89,6 +98,12 @@
 </l:CategoryReference>
 <l:Value>bbbbbbbbbbbbbb</l:Value>
 </l:Code>
+<l:Code>
+<l:CategoryReference>
+<r:ID>ID_Category_Long_1_2</r:ID>
+</l:CategoryReference>
+<l:Value>cccccccccccccc</l:Value>
+</l:Code>
 </l:CodeScheme>
 <l:CodeScheme id="ID_CodeScheme_Long_2">
 <l:Code>
@@ -96,6 +111,22 @@
 <r:ID>ID_Category_Long_2_1</r:ID>
 </l:CategoryReference>
 <l:Value>cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc</l:Value>
+</l:Code>
+</l:CodeScheme>
+<l:CodeScheme id="ID_CodeScheme_Long_3">
+<l:Code>
+<l:CategoryReference>
+<r:ID>ID_Category_Long_3_1</r:ID>
+</l:CategoryReference>
+<l:Value>bbbbbb        </l:Value>
+</l:Code>
+</l:CodeScheme>
+<l:CodeScheme id="ID_CodeScheme_Long_4">
+<l:Code>
+<l:CategoryReference>
+<r:ID>ID_Category_Long_4_1</r:ID>
+</l:CategoryReference>
+<l:Value>bbbbbb        </l:Value>
 </l:Code>
 </l:CodeScheme>
 <l:VariableScheme id="ID_VariableScheme">
@@ -269,7 +300,11 @@
 <r:Label type="name">V19</r:Label>
 <l:VariableDefinition>One discrete missing value: bbbbbb  </l:VariableDefinition>
 <l:Representation>
-<l:TextRepresentation maxLength="14" missingValue="bbbbbb   "/>
+<l:CodeRepresentation missingValue="bbbbbb   ">
+<r:CodeSchemeReference>
+<r:ID>ID_CodeScheme_Long_3</r:ID>
+</r:CodeSchemeReference>
+</l:CodeRepresentation>
 </l:Representation>
 </l:Variable>
 <l:Variable id="V18">
@@ -288,6 +323,19 @@
 <l:VariableDefinition>No missing values</l:VariableDefinition>
 <l:Representation>
 <l:TextRepresentation maxLength="8"/>
+</l:Representation>
+</l:Variable>
+<l:Variable id="V20">
+<r:Name>V22</r:Name>
+<r:Label type="label">Long string, discrete user missings,copia</r:Label>
+<r:Label type="name">V22</r:Label>
+<l:VariableDefinition>One discrete missing value: bbbbbb  </l:VariableDefinition>
+<l:Representation>
+<l:CodeRepresentation missingValue="bbbbbb   ">
+<r:CodeSchemeReference>
+<r:ID>ID_CodeScheme_Long_4</r:ID>
+</r:CodeSchemeReference>
+</l:CodeRepresentation>
 </l:Representation>
 </l:Variable>
 </l:VariableScheme>
@@ -317,8 +365,8 @@
 <p:CharacterSet>windows-1252</p:CharacterSet>
 <p:ArrayBase>1</p:ArrayBase>
 <r:Software><r:Name>SPSS</r:Name>
-<r:Version>16.0.1</r:Version>
-<r:Description>@(#) SPSS DATA FILE MS Windows 16.0.1                       </r:Description>
+<r:Version>16.0.2</r:Version>
+<r:Description>@(#) SPSS DATA FILE MS Windows 16.0.2                       </r:Description>
 </r:Software>
 <m4:DefaultVariableSchemeReference>
 <r:ID>ID_VariableScheme</r:ID>
@@ -330,7 +378,7 @@
 <r:ProprietaryProperty name="CharacterSet">windows-1252</r:ProprietaryProperty>
 <r:ProprietaryProperty name="Sysmiss">-1.797693e+308</r:ProprietaryProperty>
 <r:ProprietaryProperty name="HighestSysmissRecode">1.797693e+308</r:ProprietaryProperty>
-<r:ProprietaryProperty name="LowsetSysmissRecode">-1.797693e+308</r:ProprietaryProperty>
+<r:ProprietaryProperty name="LowestSysmissRecode">-1.797693e+308</r:ProprietaryProperty>
 </r:ProprietaryInfo>
 <m4:DataItem>
 <m4:VariableReference>
@@ -512,6 +560,16 @@
 <r:ProprietaryProperty name="MissingFormatCode">0</r:ProprietaryProperty>
 </r:ProprietaryInfo>
 </m4:DataItem>
+<m4:DataItem>
+<m4:VariableReference>
+<r:ID>V20</r:ID>
+</m4:VariableReference>
+<m4:ProprietaryDataType>string</m4:ProprietaryDataType>
+<r:ProprietaryInfo>
+<r:ProprietaryProperty name="MissingFormatCode">1</r:ProprietaryProperty>
+<r:ProprietaryProperty name="MissingValue1">bbbbbb  </r:ProprietaryProperty>
+</r:ProprietaryInfo>
+</m4:DataItem>
 </m4:ProprietaryRecordLayout>
 </p:RecordLayoutScheme>
 </p:PhysicalDataProduct>
@@ -520,7 +578,7 @@
 <r:ID>ID_06</r:ID>
 </pi:RecordLayoutReference>
 <pi:DataFileIdentification id="ID_08">
-<pi:URI>benchmark.sav</pi:URI>
+<pi:URI>benchmarkSpss16.sav</pi:URI>
 </pi:DataFileIdentification>
 <pi:GrossFileStructure  id="ID_09">
 <pi:CaseQuantity>3</pi:CaseQuantity>
